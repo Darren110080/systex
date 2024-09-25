@@ -49,7 +49,7 @@ public class Lottery {
             if (SetExcludeNumber.contains(newNumber)) {               //若產生的隨機數包含在SetExcludeNumber內就繼續迴圈
             	continue;
             }
-            else if(selectNumber.add(newNumber)== false) {             //若TreeSet加入重複的數，產生False也繼續迴圈
+            else if(!selectNumber.add(newNumber)) {             //若TreeSet加入重複的數，產生False也繼續迴圈
             	continue;
             }
             
